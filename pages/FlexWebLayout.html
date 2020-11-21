@@ -1,0 +1,71 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  .outer-col-1 {
+    background: #D7E8D4;
+    flex: 1;
+  }
+  .outer-col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .inner-row {
+    display: flex;
+    flex-direction: row;
+    background: deepskyblue;
+  }
+  .inner-col {
+    flex: 4;
+  }
+
+  .inner-row aside {
+    background: beige;
+    flex: 1;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+  article{
+    padding:10px;
+    margin:10px;
+    background: aqua;
+}
+</style>
+<body>
+  <nav class="outer-col-1">Nav</nav>
+  <div class="outer-col-2">
+  	<header>Header</header>
+    <div class="inner-row">
+      <div class="inner-col">
+        <article>
+            <h2>First article</h2>
+            <p>An article is any member of a class of dedicated words that are used with noun phrases to mark the identifiability of the referents of the noun phrases.</p>
+            </article>
+            <article>
+                <h2>Second article</h2>
+                <p>The category of articles constitutes a part of speech. In English, both "the" and "a" are articles, which combine with a noun to form a noun phrase.</p>
+                </article>
+                <article>
+                    <h2>Third article</h2>
+                    <p>Articles are words that define a noun as specific or unspecific. Consider the following examples: After the long day, the cup of tea tasted particularly good. </p>
+                    </article>
+  		<footer>Footer</footer>
+      </div>
+    	<aside>Aside</aside>
+    </div>
+  </div>
+</body>
